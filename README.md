@@ -170,13 +170,13 @@
 			<td><code>/votekick</code></td>
 			<td>Starts vote kick</td>
 			<td><code>person</code>: User</td>
-			<td>/votekick @itsmarianmc</td>
+			<td>/votekick @itsmarian.mc</td>
 		</tr>
 		<tr>
 			<td><code>/votemute</code></td>
 			<td>Starts vote mute</td>
 			<td><code>person</code>: User, <code>time</code>: String</td>
-			<td>/votemute @itsmarianmc 1m30s</td>
+			<td>/votemute @itsmarian.mc 1m30s</td>
 		</tr>
 		<tr>
 			<td><code>/members</code></td>
@@ -204,7 +204,7 @@
 			<td><code>/servertimeout</code></td>
 			<td>Instant timeout</td>
 			<td><code>person</code>: User, <code>time</code>: String</td>
-			<td>/servertimeout @itsmarianmc 8m</td>
+			<td>/servertimeout @itsmarian.mc 8m</td>
 		</tr>
 		<tr>
 			<td><code>/clearchat</code></td>
