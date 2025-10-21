@@ -288,100 +288,102 @@ pip install discord.py python-dotenv</code></pre>
 
 <h1></h1>
 
-<h2>Frequently Asked Questions</h2>
-<details>
-	<summary>
-		<h3>Bot not responding</h3>
-	</summary>
-	<p>The bot not responding can have many causes:</p>
-	<ul>
-		<li>Check bot token</li>
-		<li>Verify bot is invited to server</li>
-		<li>Confirm intents are enabled</li>
-	</ul>
-</details>
-<details>
-	<summary>
-		<h3>Commands not visible</h3>
-	</summary>
-	<p>Directly after the installation or after adding new commands, the commands may not be visible instantly, so you can try this:</p>
-	<ul>
-		<li>Restart bot</li>
-		<li>Wait for command sync (can take up to 1 hour)</li>
-		<li>Refresh discord application [CTRL + R]</li>
-	</ul>
-</details>
-<details>
-<summary>
-		<h3>Permission Errors</h3>
-	</summary>
-	<p>Sometimes the bot does not have all the permissions it needs so you may have to check its permissions:</p>
-	<ul>
-		<li>Check bot has administrator permission</li>
-		<li>Ensure bot role is above user roles</li>
-    </ul>
-</details>
-<details>
-	<summary>
-		<h3>Votes not working</h3>
-	</summary>
-	<p>Sometimes the votes may not work correctly after the setup so there are some things you have to consider:</p>
-	<ul>
-		<li>Verify vote role is configured correctly</li>
-		<li>Check users are in voice channel</li>
-		<li>Check for correct voting channel ID and user IDs</li>
-	</ul>
-</details>
-<details>
-	<summary>
-		<h3>How does the voting system work?</h3>
-	</summary>
-	<p>The voting system is democratic and fair:</p>
-	<ul>
-	    <li>Only users in the same voice channel can vote</li>
-		<li>More than 50% approval required for action to execute</li>
-		<li>Vote duration is 30 seconds</li>
-		<li>Real-time results with progress bars</li>
-	</ul>
-</details>
-<details>
-	<summary>
-		<h3>Can I customize the bot?</h3>
-	</summary>
-	<p>Yes, the bot is open source and customizable:</p>
-	<ul>
-		<li>Modify vote duration in the code</li>
-		<li>Change quorum percentage requirements</li>
-		<li>Add custom commands</li>
-		<li>Adjust time limits for mutes and timeouts</li>
-	</ul>
-</details>
-<details>
-    <summary>
-        <h3>Is this bot optimized for large servers?</h3>
-    </summary>
-    <p>The bot works best on small to medium servers:</p>
-    <ul>
-        <li>Optimized for servers under 1000 members</li>
-        <li>May experience performance issues on very large servers</li>
-        <li>Member list command can be slow on large servers</li>
-    </ul>
-</details>
-<details>
-    <summary>
-        <h3>What Python version do I need?</h3>
-    </summary>
-    <p>Python requirements:</p>
-    <ul>
-        <li>Python 3.8 or higher required</li>
-        <li>Python 3.10+ recommended for best performance</li>
-        <li>discord.py library required</li>
-        <li>python-dotenv for configuration management</li>
-    </ul>
-</details>
-<div>
-	<p>Still have questions? <a href="https://support.itsmarian.is-a.dev/?utm_origin=https://github.com/itsmarianmc/DISCORD-VOTING-SYSTEM-BOT&utm_page=README&page_pos=support_info_lai">Contact me</a> or <a href="https://github.com/itsmarianmc/DISCORD-VOTING-SYSTEM-BOT/issues">open an issue on GitHub</a>.</p>
-</div>
+<section>
+	<h2>Frequently Asked Questions</h2>
+	<details>
+		<summary>
+			<h3>Bot not responding</h3>
+		</summary>
+		<p>The bot not responding can have many causes:</p>
+		<ul>
+			<li>Check bot token</li>
+			<li>Verify bot is invited to server</li>
+			<li>Confirm intents are enabled</li>
+		</ul>
+	</details>
+	<details>
+		<summary>
+			<h3>Commands not visible</h3>
+		</summary>
+		<p>Directly after the installation or after adding new commands, the commands may not be visible instantly, so you can try this:</p>
+		<ul>
+			<li>Restart bot</li>
+			<li>Wait for command sync (can take up to 1 hour)</li>
+			<li>Refresh discord application [CTRL + R]</li>
+		</ul>
+	</details>
+	<details>
+		<summary>
+			<h3>Permission Errors</h3>
+		</summary>
+		<p>Sometimes the bot does not have all the permissions it needs so you may have to check its permissions:</p>
+		<ul>
+			<li>Check bot has administrator permission</li>
+			<li>Ensure bot role is above user roles</li>
+		</ul>
+	</details>
+	<details>
+		<summary>
+			<h3>Votes not working</h3>
+		</summary>
+		<p>Sometimes the votes may not work correctly after the setup so there are some things you have to consider:</p>
+		<ul>
+			<li>Verify vote role is configured correctly</li>
+			<li>Check users are in voice channel</li>
+			<li>Check for correct voting channel ID and user IDs</li>
+		</ul>
+	</details>
+	<details>
+		<summary>
+			<h3>How does the voting system work?</h3>
+		</summary>
+		<p>The voting system is democratic and fair:</p>
+		<ul>
+			<li>Only users in the same voice channel can vote</li>
+			<li>More than 50% approval required for action to execute</li>
+			<li>Vote duration is 30 seconds</li>
+			<li>Real-time results with progress bars</li>
+		</ul>
+	</details>
+	<details>
+		<summary>
+			<h3>Can I customize the bot?</h3>
+		</summary>
+		<p>Yes, the bot is open source and customizable:</p>
+		<ul>
+			<li>Modify vote duration in the code</li>
+			<li>Change quorum percentage requirements</li>
+			<li>Add custom commands</li>
+			<li>Adjust time limits for mutes and timeouts</li>
+		</ul>
+	</details>
+	<details>
+		<summary>
+			<h3>Is this bot optimized for large servers?</h3>
+		</summary>
+		<p>The bot works best on small to medium servers:</p>
+		<ul>
+			<li>Optimized for servers under 1000 members</li>
+			<li>May experience performance issues on very large servers</li>
+			<li>Member list command can be slow on large servers</li>
+		</ul>
+	</details>
+	<details>
+		<summary>
+			<h3>What Python version do I need?</h3>
+		</summary>
+		<p>Python requirements:</p>
+		<ul>
+			<li>Python 3.8 or higher required</li>
+			<li>Python 3.10+ recommended for best performance</li>
+			<li>discord.py library required</li>
+			<li>python-dotenv for configuration management</li>
+		</ul>
+	</details>
+	<div>
+		<p>Still have questions? <a href="https://support.itsmarian.is-a.dev/?utm_origin=https://github.com/itsmarianmc/DISCORD-VOTING-SYSTEM-BOT&utm_page=README&page_pos=support_info_lai">Contact me</a> or <a href="https://github.com/itsmarianmc/DISCORD-VOTING-SYSTEM-BOT/issues">open an issue on GitHub</a>.</p>
+	</div>
+</section>
 
 <h1></h1>
 
