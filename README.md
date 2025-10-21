@@ -2,7 +2,7 @@
 <p align="center">An advanced Discord bot for democratic mute and kick voting and server management.<br>Easy, simple and fast setup and no third party apps required</p>
 
 <p align="center">
-	<img src="assets/previews/preview-discord-bot.png" alt="Discord Voting System Bot Preview" style="width:100%; height:auto;">
+	<img src="assets/img/ongoingvote-y.png" alt="Discord Voting System Bot Preview" style="width:100%; height:auto;">
 </p>
 
 <h1></h1>
@@ -120,22 +120,23 @@
 		<li>Create a "VOTING" role (or use a standard role for verified users)</li>
 	</ol>
 	<h3>2. Installation</h3>
-	<p>Clone the repository and install dependencies:</p>
-	<pre><code># Clone repository
-git clone https://github.com/your-username/discord-voice-vote-bot.git
-cd discord-voice-vote-bot
-# Install dependencies
-pip install discord.py python-dotenv</code></pre>
+	<ul>
+		<li><a href="https://github.com/itsmarianmc/DISCORD-VOTING-SYSTEM-BOT/releases/latest">Download the latest release </a></li>
+		<li>Extract the downloaded file into your computer</li>
+	</ul>
 	<h3>3. Configuration</h3>
 	<p>Open the <code>release-bot.py</code> file in your preferred editor</p>
 	<p>Modify these constants:</p>
 	<pre>
     <code># Enter the copied bot token here (in the brackets, don't replace them!)
     BOTTOKEN = "YOUR_BOT_TOKEN_HERE"
+	<br>
     # Copy the Role ID of the voting role
     VOTE_ROLE_ID = 1234567891011121314
+	<br>
     # Copy the Role ID which can perform admin commands (like /clearchat)
     ADMIN_ROLE_ID = 1234567891011121314
+	<br>
     # Copy the Channel ID in which the voting system should be used
     ALLOWED_CHANNEL_ID = 1234567891011121314</code>
     </pre>
@@ -227,63 +228,47 @@ pip install discord.py python-dotenv</code></pre>
 <h1></h1>
 
 <section>
-	<h2>Voting System</h2>
-	<details>
-		<summary>
-			<h3>How It Works</h3>
-		</summary>
-		<p>The voting system follows a democratic process:</p>
-		<ol>
-			<li><strong>Start:</strong> User with vote role starts vote</li>
-			<li><strong>Eligibility:</strong> Only voice channel members can vote</li>
-			<li><strong>Quorum:</strong> >50% of channel members must approve</li>
-			<li><strong>Duration:</strong> Vote runs for 30 seconds</li>
-			<li><strong>Automatic Execution:</strong> Action executes immediately if successful</li>
-		</ol>
-	</details>
-	<details>
-		<summary>
-			<h3>Live Features</h3>
-		</summary>
-		<p>The voting system includes real-time features for better user experience:</p>
-		<ul>
-			<li>Real-time result display</li>
-			<li>Visual progress bars</li>
-			<li>Current voter display</li>
-			<li>Countdown timer</li>
-			<li>Automatic updates</li>
-		</ul>
-	</details>
+    <h2>Voting System</h2>
+    <h3>How It Works</h3>
+    <p>The voting system follows a democratic process:</p>
+    <ol>
+        <li><strong>Start:</strong> User with vote role starts vote</li>
+        <li><strong>Eligibility:</strong> Only voice channel members can vote</li>
+        <li><strong>Quorum:</strong> >50% of channel members must approve</li>
+        <li><strong>Duration:</strong> Vote runs for 30 seconds</li>
+        <li><strong>Automatic Execution:</strong> Action executes immediately if successful</li>
+    </ol>
+    <h3>Live Features</h3>
+    <p>The voting system includes real-time features for better user experience:</p>
+    <ul>
+        <li>Real-time result display</li>
+        <li>Visual progress bars</li>
+        <li>Current voter display</li>
+        <li>Countdown timer</li>
+        <li>Automatic updates</li>
+    </ul>
 </section>
 
 <h1></h1>
 
 <section>
-	<h2>Permissions</h2>
-	<details>
-		<summary>
-			<h3>Required Bot Permissions</h3>
-		</summary>
-		<p>Administrator (recommended) or individually:</p>
-		<ul>
-			<li>Read/send/manage messages</li>
-			<li>Move members</li>
-			<li>Mute members</li>
-			<li>Manage timeouts</li>
-			<li>Manage roles</li>
-		</ul>
-	</details>
-	<details>
-		<summary>
-			<h3>Role System</h3>
-		</summary>
-		<p>The bot uses a role-based permission system:</p>
-		<ul>
-			<li><strong>VOTE_ROLE_ID:</strong> Permission for <code>/votekick</code> and <code>/votemute</code></li>
-			<li><strong>ADMIN_ROLE_ID:</strong> Permission for admin commands</li>
-			<li><strong>ALLOWED_CHANNEL_ID:</strong> Channel where commands can be used</li>
-		</ul>
-	</details>
+    <h2>Permissions</h2>
+    <h3>Required Bot Permissions</h3>
+    <p>Administrator (recommended) or individually:</p>
+    <ul>
+        <li>Read/send/manage messages</li>
+        <li>Move members</li>
+        <li>Mute members</li>
+        <li>Manage timeouts</li>
+        <li>Manage roles</li>
+    </ul>
+    <h3>Role System</h3>
+    <p>The bot uses a role-based permission system:</p>
+    <ul>
+        <li><strong>VOTE_ROLE_ID:</strong> Permission for <code>/votekick</code> and <code>/votemute</code></li>
+        <li><strong>ADMIN_ROLE_ID:</strong> Permission for admin commands</li>
+        <li><strong>ALLOWED_CHANNEL_ID:</strong> Channel where commands can be used</li>
+    </ul>
 </section>
 
 <h1></h1>
@@ -380,6 +365,7 @@ pip install discord.py python-dotenv</code></pre>
 			<li>python-dotenv for configuration management</li>
 		</ul>
 	</details>
+    <br>
 	<div>
 		<p>Still have questions? <a href="https://support.itsmarian.is-a.dev/?utm_origin=https://github.com/itsmarianmc/DISCORD-VOTING-SYSTEM-BOT&utm_page=README&page_pos=support_info_lai">Contact me</a> or <a href="https://github.com/itsmarianmc/DISCORD-VOTING-SYSTEM-BOT/issues">open an issue on GitHub</a>.</p>
 	</div>
@@ -388,62 +374,42 @@ pip install discord.py python-dotenv</code></pre>
 <h1></h1>
 
 <section>
-	<h2>File Structure & Usage Tips</h2>
-	<details>
-		<summary>
-			<h3>File Structure</h3>
-		</summary>
-		<p>The bot project has a simple file structure:</p>
-		<pre><code>discord-voice-vote-bot/
+    <h2>File Structure & Usage Tips</h2>
+    <h3>File Structure</h3>
+    <p>The bot project has a simple file structure:</p>
+    <pre><code>discord-voice-vote-bot/
 ├── release-bot.py      # Main bot code
 ├── README.md           # This file
 └── requirements.txt    # Python dependencies</code></pre>
-	</details>
-	<details>
-		<summary>
-			<h3>Voice Channel Setup</h3>
-		</summary>
-		<p>Important considerations for voice channel configuration:</p>
-		<ul>
-			<li>Ensure bot has access to all voice channels</li>
-			<li>Test permissions before deployment</li>
-			<li>Check bot role hierarchy in server settings</li>
-		</ul>
-	</details>
-	<details>
-		<summary>
-			<h3>Role Management</h3>
-		</summary>
-		<p>Best practices for managing roles:</p>
-		<ul>
-			<li>Assign vote role to trusted members</li>
-			<li>Restrict admin role to server moderators and admins</li>
-			<li>Keep bot role above user roles in hierarchy</li>
-		</ul>
-	</details>
-	<details>
-		<summary>
-			<h3>Channel Restriction</h3>
-		</summary>
-		<p>Control where the bot can be used:</p>
-		<ul>
-			<li>Use dedicated bot channel for commands</li>
-			<li>Prevent spam in other channels</li>
-			<li>Configure ALLOWED_CHANNEL_ID correctly</li>
-		</ul>
-	</details>
-	<details>
-		<summary>
-			<h3>Debugging</h3>
-		</summary>
-		<p>The bot logs important events to console:</p>
-		<ul>
-			<li>Login status</li>
-			<li>Synced commands</li>
-			<li>Server list</li>
-			<li>Error messages and stack traces</li>
-		</ul>
-	</details>
+    <h3>Voice Channel Setup</h3>
+    <p>Important considerations for voice channel configuration:</p>
+    <ul>
+        <li>Ensure bot has access to all voice channels</li>
+        <li>Test permissions before deployment</li>
+        <li>Check bot role hierarchy in server settings</li>
+    </ul>
+    <h3>Role Management</h3>
+    <p>Best practices for managing roles:</p>
+    <ul>
+        <li>Assign vote role to trusted members</li>
+        <li>Restrict admin role to server moderators and admins</li>
+        <li>Keep bot role above user roles in hierarchy</li>
+    </ul>
+    <h3>Channel Restriction</h3>
+    <p>Control where the bot can be used:</p>
+    <ul>
+        <li>Use dedicated bot channel for commands</li>
+        <li>Prevent spam in other channels</li>
+        <li>Configure ALLOWED_CHANNEL_ID correctly</li>
+    </ul>
+    <h3>Debugging</h3>
+    <p>The bot logs important events to console:</p>
+    <ul>
+        <li>Login status</li>
+        <li>Synced commands</li>
+        <li>Server list</li>
+        <li>Error messages and stack traces</li>
+    </ul>
 </section>
 
 <h1></h1>
